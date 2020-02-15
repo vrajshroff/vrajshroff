@@ -7,17 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <style type="text/css">
-    iframe {position:absolute; top:0px; left:0px;}
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
 </style>
 
 <body onload="myFunction()">
   <iframe id="sheet" height="100%" width="100%"></iframe>
 
   <script>
-      function myFunction() {
-        alert('Fill out the form if you have not already:\nhttp://bit.ly/upenn-summer-2020.\n\nTo filter data, click:\nData > Filter views > Create new temporary filter view');
-        document.getElementById("sheet").src="https://docs.google.com/spreadsheets/d/1NOMdbrmsP1GNg8CCLWanVO1xZkZCRCyGS9poUEwI-Ek/edit#gid=1221745955";
-      }
-
+    function myFunction() {
+      alert('Fill out the form if you have not already:\nhttp://bit.ly/upenn-summer-2020.\n\nTo filter data, click:\nData > Filter views > Create new temporary filter view');
+      document.getElementById("sheet").src = "https://docs.google.com/spreadsheets/d/1NOMdbrmsP1GNg8CCLWanVO1xZkZCRCyGS9poUEwI-Ek/edit#gid=1221745955";
+    }
   </script>
 </body>
