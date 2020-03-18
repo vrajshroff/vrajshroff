@@ -6,9 +6,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+
+
+<body>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
   <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css" />
-  <script type="text/javascript">
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyCwnSJODwjoQxsueGtoiIwAcNxo9Y6Zt78",
+      authDomain: "virtual-hour.firebaseapp.com",
+      databaseURL: "https://virtual-hour.firebaseio.com",
+      projectId: "virtual-hour",
+      storageBucket: "virtual-hour.appspot.com",
+      messagingSenderId: "721474763020",
+      appId: "1:721474763020:web:ea4e55f0bc329695d53129",
+      measurementId: "G-TNVC2J28C0"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
     var uiConfig = {
       signInSuccessUrl: 'index.html',
       signInOptions: [
@@ -24,12 +45,8 @@
     ui.start('#firebaseui-auth-container', uiConfig);
   </script>
 
-</head>
-
-
-
-<body>
   <div id="firebaseui-auth-container"></div>
+  
 </body>
 
 </html>
