@@ -16,7 +16,7 @@
   <meta property="og:type" content="website">
 </head>
 
-<body>
+<body onload="redirect()">
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
   <script>
@@ -32,6 +32,9 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
 
-    window.location.href = "https://upenn.zoom.us/my/vrajshroff";
+
+    function redirect() {
+      window.location.href = "https://upenn.zoom.us/my/vrajshroff";
+    }
   </script>
 </body>
