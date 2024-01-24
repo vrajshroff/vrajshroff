@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>OldInsta</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="author" content="Vraj Shroff">
+  <meta name="description" content="OldInsta Beta">
+  <meta name="robots" content="index,nofollow" />
+
+  <meta property="og:url" content="vrajshroff.com/oldinsta">
+  <meta property="og:title" content="OldInsta Beta">
+  <meta property="og:type" content="website">
+</head>
+
+<body onload="redirect()">
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAT8N9dTHjNbIrgADtXYfUeL1eTUr9wbS0",
+      authDomain: "vraj-shroff.firebaseapp.com",
+      projectId: "vraj-shroff",
+      storageBucket: "vraj-shroff.appspot.com",
+      messagingSenderId: "150105005761",
+      appId: "1:150105005761:web:752c960684f98752dbfe40",
+      measurementId: "G-5RYCB2395Q"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+
+    function redirect() {
+      window.location.href = "https://testflight.apple.com/join/bR8nA6LF";
+    }
+  </script>
+</body>
